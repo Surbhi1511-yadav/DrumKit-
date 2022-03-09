@@ -1,6 +1,6 @@
 var audio_volume = 0.6;
 
-
+var image_url
 const api_call = () => {
     const URL = "https://api.unsplash.com/photos/random?query=drum"
     fetch(URL,{
@@ -8,7 +8,9 @@ const api_call = () => {
             'Authorization' : 'Client-ID I4TyHO6RrxvIP4tbViMsG83DkDWUlpGDbO3TI1Fyx3k'
         }
     }).then(res=>res.json())
-        .then(res => console.log(res))
+        .then(res => {
+            image_url = res.urls.small
+        })
          .catch(error => console.log(error))
 }
 api_call()
