@@ -46,10 +46,12 @@ document.addEventListener("keypress", (event) => {
 
 //theme 1
 const theme_1__background = "#091921";
+const theme_1__background_low = "rgba(9,25,33,0.8)";
 const theme_1__text = "#00fff1";
 
 //theme 2
 const theme_2__background = "#f7c340";
+const theme_2__background_low = "rgba(247,195,64,0.85)";
 const theme_2__text = "#2d2d2d";
 
 const change_theme = (theme) => {
