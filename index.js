@@ -26,6 +26,11 @@ const change_background = (image_src) => {
 
 }
 
+const bg_changer = document.getElementById("util_button-background")
+bg_changer.addEventListener("click", () => {
+    api_call()
+})
+
 // to do select all the drum elements and add event listener
 // add animation when a button is clicked
 //play music()
