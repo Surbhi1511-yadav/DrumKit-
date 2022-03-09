@@ -18,7 +18,12 @@ api_call()
 
 const change_background = (image_src) => {
     let container_style=document.getElementsByClassName('container')[0].style
-    container_style.background = `url(${image_src})`
+    let bg_color = getComputedStyle(document.documentElement).getPropertyValue("--background_low")
+
+    container_style.background = `linear-gradient(300deg,${bg_color},${bg_color}),url(${image_src})`
+    container_style.backgroundSize='cover'
+    container_style.backgroundPosition='center'
+
 }
 
 // to do select all the drum elements and add event listener
