@@ -1,5 +1,11 @@
 var audio_volume = 0.6;
 
+
+const api_call = () => {
+    const URL = "https://api.unsplash.com/photos/?client_id=YOUR_ACCESS_KEY"
+    fetch()
+}
+
 // to do select all the drum elements and add event listener
 // add animation when a button is clicked
 //play music()
