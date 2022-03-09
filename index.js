@@ -1,6 +1,6 @@
 var audio_volume = 0.6;
 
-var image_url
+var image_url;
 const api_call = () => {
     const URL = "https://api.unsplash.com/photos/random?query=drum"
     fetch(URL,{
@@ -10,10 +10,16 @@ const api_call = () => {
     }).then(res=>res.json())
         .then(res => {
             image_url = res.urls.small
+            change_background(image_url)
         })
          .catch(error => console.log(error))
 }
 api_call()
+
+const change_background = (image_src) => {
+    let container_style=document.getElementsByClassName('container')[0].style
+    container_style.background = `url(${image_src})`
+}
 
 // to do select all the drum elements and add event listener
 // add animation when a button is clicked
