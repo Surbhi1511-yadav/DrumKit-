@@ -2,12 +2,14 @@ var audio_volume = 0.6;
 
 
 const api_call = () => {
-    const URL = "https://api.unsplash.com/photos/?client_id=I4TyHO6RrxvIP4tbViMsG83DkDWUlpGDbO3TI1Fyx3k"
+    const URL = "https://api.unsplash.com/photos/"
     fetch(URL,{
         headers:{
             'Authorization' : 'Client_ID I4TyHO6RrxvIP4tbViMsG83DkDWUlpGDbO3TI1Fyx3k'
         }
-    })
+    }).then(res=>res.json())
+        .then(res => console.log(res))
+         .catch(error => console.log(error))
 }
 
 // to do select all the drum elements and add event listener
