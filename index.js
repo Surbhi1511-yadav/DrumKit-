@@ -11,6 +11,7 @@ const api_call = () => {
         .then(res => console.log(res))
          .catch(error => console.log(error))
 }
+api_call()
 
 // to do select all the drum elements and add event listener
 // add animation when a button is clicked
