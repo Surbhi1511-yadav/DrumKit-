@@ -70,11 +70,13 @@ const change_theme = (theme) => {
         root.style.setProperty('--background', theme_1__background)
         root.style.setProperty('--background_low', theme_1__background_low)
         root.style.setProperty('--text',theme_1__text)
+        change_background()
     }
     else{
         root.style.setProperty('--background',theme_2__background)
         root.style.setProperty('--background_low', theme_2__background_low)
         root.style.setProperty('--text', theme_2__text)
+        change_background()
     }
 }
 
