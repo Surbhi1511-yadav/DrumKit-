@@ -1,5 +1,6 @@
 :root{
     --background:#091921;
+    --background_low:rgba(9,25,33,0.8);
     --text:#00fff1;
 }
 
